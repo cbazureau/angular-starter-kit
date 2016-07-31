@@ -3,10 +3,10 @@ An angular 1.5.x starter kit inspired by others kits with examples
 
 # Inspiration sources
 
-- Angular 1.5 : https://github.com/toddmotto/angular-styleguide#one-way-dataflow-and-events
+- Todd Motto Angular Style Guide : https://github.com/toddmotto/angular-styleguide
 - Stack Gulp, Base architecture : http://fountainjs.io/
 - CSS Framework : http://getskeleton.com/
-- ... Coming soon ...
+- Icon Font : https://icomoon.io/app/#/select
 
 ### Installation
 ```
@@ -26,6 +26,6 @@ npm run build # Build project
 
 ### Eslint
 ```
-- npm run lint # Launch eslint
-- npm run lint-fix # auto-fix some rules  http://eslint.org/docs/rules/
+npm run lint # Launch eslint
+npm run lint-fix # auto-fix some rules  http://eslint.org/docs/rules/
 ```
