@@ -1,0 +1,62 @@
+{
+  "extends": "eslint:recommended",
+  "plugins": [
+    "angular",
+    "lodash"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jasmine": true
+  },
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "globals": {
+    "_": true,
+    "angular": true,
+    "module": true,
+    "inject": true,
+    "moment": true,
+    // Gulp task
+    "process": true,
+    "require": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    // http://eslint.org/docs/rules/
+    // Best Practices
+    "eqeqeq": ["error", "smart"],
+    "no-alert": "error",
+    "no-eq-null": "error",
+    "no-implicit-globals": "error",
+
+    // Stylistic Issues
+    "array-bracket-spacing": ["error", "never"],
+    "computed-property-spacing": ["error", "never"],
+    "comma-dangle": "error",
+    "comma-spacing": ["error", {
+      "before": false,
+      "after": true
+    }],
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "no-multiple-empty-lines": "error",
+    "max-depth": ["error", 4],
+
+    // ECMAScript 6
+    "arrow-body-style": ["error", "as-needed"],
+    "arrow-parens": ["error", "as-needed"],
+    "arrow-spacing": "error",
+    "generator-star-spacing": ["error", {
+      "before": true,
+      "after": false
+    }],
+    "no-confusing-arrow": "error",
+    "no-var": "error",
+    "prefer-arrow-callback": "error"
+
+  }
+}

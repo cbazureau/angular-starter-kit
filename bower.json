@@ -1,0 +1,13 @@
+{
+  "name": "angular-starter-kit",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular-ui-router": "~0.3.1",
+    "moment": "~2.10.6",
+    "normalize-css": "~4.0.0",
+    "angular": "~1.5.8"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5.8"
+  }
+}

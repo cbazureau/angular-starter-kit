@@ -1,0 +1,49 @@
+.demo {
+  .color {
+    float: left;
+    width: 48%;
+    margin-right: 0.5%;
+    border: 1px solid $grey-anatomy;
+    text-align: left;
+    padding: 0.6rem 0.6rem 0rem 0.6rem;
+    margin-bottom: 0.3rem;
+  }
+  .color-white-forit {
+    background-color: $white-forit;
+  }
+  .color-grey-anatomy {
+    background-color: $grey-anatomy;
+  }
+  .color-gray-jean {
+    background-color: $gray-jean;
+  }
+  .color-grey-shade {
+    background-color: $grey-shade;
+    color: $white-forit;
+  }
+  .color-red-hot {
+    background-color: $red-hot;
+    color: $white-forit;
+  }
+  .color-green-lantern {
+    background-color: $green-arrow;
+    color: $white-forit;
+  }
+  .color-orange-clockwork {
+    background-color: $orange-clockwork;
+    color: $white-forit;
+  }
+  .color-orange-clockwork-hover {
+    background-color: $orange-clockwork-hover;
+    color: $white-forit;
+  }
+  .color-dark-knight {
+    background-color: $dark-knight;
+    color: $white-forit;
+  }
+  .color-dark-knight-hover {
+    background-color: $dark-knight;
+    color: $white-forit;
+  }
+}
+

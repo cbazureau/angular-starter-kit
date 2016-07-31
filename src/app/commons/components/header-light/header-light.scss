@@ -1,0 +1,78 @@
+header-light {
+  width: 100%;
+  display: block;
+  height: 6rem;
+  background: $dark-knight;
+  .logo {
+    margin-top: 0rem;
+    margin-left: 0.5rem;
+    height: 6rem;
+    float: left;
+    width: 6rem;
+    background: transparent url("../../assets/img/logo.svg") top left no-repeat;
+    background-size: 6rem 6rem;
+
+  }
+  .secure {
+    float: right;
+    color: $white-spirit;
+    margin:1.2rem 1rem 0 2rem;
+    .secure-text {
+      display: none;
+    }
+    span:before {
+      color: $green-arrow;
+      font-size: 3rem;
+      float: left;
+      margin-top: -0.5rem
+    }
+  }
+}
+
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {}
+
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 550px) {
+  header-light {
+    height: 8rem;
+    .logo {
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+    .secure {
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+      .secure-text {
+        display: inline;
+        margin-left: 1rem
+      }
+
+    }
+  }
+}
+
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+  header-light {
+    .secure {
+      margin-right: 2rem;
+    }
+  }
+}
+
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {}
+
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {}

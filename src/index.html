@@ -1,0 +1,64 @@
+<!doctype html>
+<html ng-app="starter" ng-strict-di>
+  <head>
+    <meta charset="utf-8">
+    <title ng-bind="$state.current.data.pageTitle"></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <base href="/">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <!-- inject:css -->
+    <!-- css files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+  <body>
+    <div class="pass_hello" style="display:none"></div>
+    <div ui-view>
+       <style type="text/css">
+            div.app-loading {position: fixed;}
+            div.app-loading div.animated-container {background-color:#333333;bottom:0;left:0;opacity:1.0;position:fixed;right:0;top:0;z-index:999999;}
+            div.app-loading div.animated-container.ng-leave {opacity:1.0;transition: all linear 200ms;-webkit-transition: all linear 200ms;}
+            div.app-loading div.animated-container.ng-leave-active {opacity:0;}
+            div.app-loading div.messaging {color:#FFFFFF;font-family:monospace;left:0;position:absolute;right:0;text-align:center;top:40%;font-size:1.6rem;max-width:70%;margin:0 auto;line-height:3rem;}
+            div.app-loading img {margin:20% auto 2rem auto;width:10rem;height:10rem;display:block;}
+            @media (min-width: 750px) {
+              div.app-loading div.messaging {font-size:2rem;}
+              div.app-loading img {margin:5% auto 3rem auto;width:20rem;height:20rem;}
+            }
+        </style>
+        <div class="app-loading">
+          <div class="animated-container">
+            <img src="assets/img/logo.svg" />
+            <div class="messaging">
+              Les meilleures choses ont besoin de patience
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- build:js(src) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <!-- endbower -->
+    <script src="../bower_components/lodash-custom/lodash-custom.js"></script>
+    <script src="../bower_components/moment/locale/fr.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp/serve,.tmp/partials}) scripts/app.js -->
+    <!-- inject:js -->
+    <!-- js files will be automatically insert here -->
+    <!-- endinject -->
+
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+    </script>
+
+  </body>
+</html>

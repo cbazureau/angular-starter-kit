@@ -1,0 +1,971 @@
+/* Do not remove the comments below. It's the markers used by wiredep to inject
+   sass dependencies when defined in the bower.json of your dependencies */
+
+// bower:scss
+// endbower
+$white-spirit: #ffffff;
+$pitch-black:#000000;
+
+$white-forit: #D8D8D8;
+
+$grey-anatomy:#6491A1;
+$gray-jean:#385A72;
+$grey-shade:#003455;
+$dark-knight:#212121;
+
+$red-hot:#A10518;
+$green-arrow:#29ABA4;
+
+$orange-clockwork:#fa4b2a;
+$orange-clockwork-hover:#cf3b1f;
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../assets/fonts/icomoon.eot?5ttr77');
+  src:  url('../assets/fonts/icomoon.eot?5ttr77#iefix') format('embedded-opentype'),
+    url('../assets/fonts/icomoon.ttf?5ttr77') format('truetype'),
+    url('../assets/fonts/icomoon.woff?5ttr77') format('woff'),
+    url('../assets/fonts/icomoon.svg?5ttr77#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  * {
+    box-sizing: border-box;
+  }
+  line-height: 1.6rem;
+  font-weight: normal;
+  font-size: 1.3rem;
+  // Inspired by  https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/#details-of-approach-a
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  color: $dark-knight;
+  background-color: $white-forit;
+}
+
+
+
+// Inspired by http://getskeleton.com/
+
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 63.5rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.container-large {
+  position: relative;
+  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.container-pass {
+  position: relative;
+  width: 100%;
+  max-width: 67rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.left-side {
+  float:left;
+  width:10rem;
+  display: none;
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+
+/* For devices larger than 400px */
+
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+
+
+/* For devices larger than 550px */
+
+@media (min-width: 550px) {
+  .container {
+    width: 80%;
+  }
+  .column,
+  .columns {
+    margin-left: 4%;
+  }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0;
+  }
+  .one.column,
+  .one.columns {
+    width: 4.66666666667%;
+  }
+  .two.columns {
+    width: 13.3333333333%;
+  }
+  .three.columns {
+    width: 22%;
+  }
+  .four.columns {
+    width: 30.6666666667%;
+  }
+  .five.columns {
+    width: 39.3333333333%;
+  }
+  .six.columns {
+    width: 48%;
+  }
+  .seven.columns {
+    width: 56.6666666667%;
+  }
+  .eight.columns {
+    width: 65.3333333333%;
+  }
+  .nine.columns {
+    width: 74.0%;
+  }
+  .ten.columns {
+    width: 82.6666666667%;
+  }
+  .eleven.columns {
+    width: 91.3333333333%;
+  }
+  .twelve.columns {
+    width: 100%;
+    margin-left: 0;
+  }
+  .one-third.column {
+    width: 30.6666666667%;
+  }
+  .two-thirds.column {
+    width: 65.3333333333%;
+  }
+  .one-half.column {
+    width: 48%;
+  }
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns {
+    margin-left: 8.66666666667%;
+  }
+  .offset-by-two.column,
+  .offset-by-two.columns {
+    margin-left: 17.3333333333%;
+  }
+  .offset-by-three.column,
+  .offset-by-three.columns {
+    margin-left: 26%;
+  }
+  .offset-by-four.column,
+  .offset-by-four.columns {
+    margin-left: 34.6666666667%;
+  }
+  .offset-by-five.column,
+  .offset-by-five.columns {
+    margin-left: 43.3333333333%;
+  }
+  .offset-by-six.column,
+  .offset-by-six.columns {
+    margin-left: 52%;
+  }
+  .offset-by-seven.column,
+  .offset-by-seven.columns {
+    margin-left: 60.6666666667%;
+  }
+  .offset-by-eight.column,
+  .offset-by-eight.columns {
+    margin-left: 69.3333333333%;
+  }
+  .offset-by-nine.column,
+  .offset-by-nine.columns {
+    margin-left: 78.0%;
+  }
+  .offset-by-ten.column,
+  .offset-by-ten.columns {
+    margin-left: 86.6666666667%;
+  }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns {
+    margin-left: 95.3333333333%;
+  }
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns {
+    margin-left: 34.6666666667%;
+  }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns {
+    margin-left: 69.3333333333%;
+  }
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns {
+    margin-left: 52%;
+  }
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+
+/* Larger than phablet */
+
+@media (min-width: 550px) {
+  /*h1 { font-size: 3.5rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.8rem; }
+  h4 { font-size: 1.6rem; }
+  h5 { font-size: 1.6rem; }
+  */
+}
+
+p {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  text-align: justify;
+  &.small {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    color: $grey-anatomy;
+  }
+  &.center {
+    text-align: center;
+  }
+  &.strong {
+    font-weight: bold;
+  }
+  &.error-message {
+    color:$red-hot;
+    text-align: center;
+  }
+}
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+  font-weight: bold;
+  color: $orange-clockwork;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $orange-clockwork-hover;
+}
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  padding: 0.3rem 0.3rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 4rem;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  width: 100%;
+  white-space: nowrap;
+  background-color: $dark-knight;
+  color: $white-spirit;
+  border-radius: 2px;
+  border: 1px solid $dark-knight;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  background-color: $pitch-black;
+  border-color: $pitch-black;
+  color: $white-spirit;
+  outline: 0;
+}
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: $white-spirit;
+  background-color: $orange-clockwork;
+  border-color: $orange-clockwork;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: $white-spirit;
+  background-color: $orange-clockwork-hover;
+  border-color: $orange-clockwork-hover;
+}
+
+.button.button-primary:disabled,
+button.button-primary:disabled,
+input[type="submit"].button-primary:disabled,
+input[type="reset"].button-primary:disabled,
+input[type="button"].button-primary:disabled {
+  color: $grey-shade;
+  background-color: $grey-anatomy;
+  border-color: $grey-anatomy;
+  cursor: not-allowed;
+}
+
+.button.button-back,
+button.button-back,
+input[type="button"].button-back {
+  border-color: $white-forit;
+  background-color: $white-forit;
+  color: $grey-shade;
+  font-size: 1.3rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  width:8rem;
+  line-height: 2rem;
+  &:before {
+    display: block;
+    float: left;
+    font-size:2rem;
+    width: 3rem;
+    margin-left: 0.5rem;
+    margin-top: 0rem;
+    color: $orange-clockwork;
+    text-align: left;
+    content: "<";
+  }
+}
+.button.button-back:hover,
+button.button-back:hover,
+input[type="button"].button-back:hover {
+  border-color: $white-forit;
+  background-color: $white-forit;
+  color: $dark-knight;
+
+}
+
+.button.button-spinning,
+button.button-spinning,
+input[type="submit"].button-spinning,
+input[type="button"].button-spinning,
+.button.button-spinning:hover,
+button.button-spinning:hover,
+input[type="submit"].button-spinning:hover,
+input[type="button"].button-spinning:hover {
+  border-color: $white-forit;
+  background-color: $white-forit;
+  color: $grey-shade;
+  min-width: auto;
+  &:before {
+    display: block;
+    float: left;
+    width: 2.5rem;
+    margin-right: 0.8rem;
+    margin-top: 0.8rem;
+    text-align: left;
+    content: "\ea2d";
+  }
+}
+
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 4.5rem;
+  padding: 1.2rem 1.3rem;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: $white-spirit;
+  border: 1px solid $grey-anatomy;
+  font-size: 1.6rem;
+  font-weight: normal;
+  border-radius: 2px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+div.control__indicator {
+  border: 1px solid $grey-anatomy;
+}
+
+
+/* Removes awkward default styles on some inputs for iOS */
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="email"]::placeholder,
+input[type="number"]::placeholder,
+input[type="search"]::placeholder,
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="url"]::placeholder,
+input[type="password"]::placeholder {
+  padding: 0.2rem 0rem;
+  color: $grey-anatomy;
+}
+
+textarea {
+  min-height: 7.5rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  font-weight: normal
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid $grey-anatomy;
+  outline: 0;
+}
+
+label,
+legend {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: auto 0.5rem;
+  line-height: 2.6rem;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  width: 2rem;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+label > .label-body {
+  display: block;
+  float: left;
+  margin-left: .5rem;
+  font-weight: normal;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid $grey-shade;
+  outline: 0;
+}
+
+input[type="email"].input-error,
+input[type="number"].input-error,
+input[type="search"].input-error,
+input[type="text"].input-error,
+input[type="tel"].input-error,
+input[type="url"].input-error,
+input[type="password"].input-error,
+select.input-error,
+textarea.input-error,
+div.control__indicator.input-error {
+  border: 1px solid $red-hot;
+  color: $red-hot;
+}
+
+input[type="email"].input-valid,
+input[type="number"].input-valid,
+input[type="search"].input-valid,
+input[type="text"].input-valid,
+input[type="tel"].input-valid,
+input[type="url"].input-valid,
+input[type="password"].input-valid,
+select.input-valid,
+textarea.input-valid {
+  border: 1px solid $green-arrow;
+  color: $green-arrow;
+}
+
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul {
+  list-style: circle inside;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+ol,
+ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+code {
+  padding: 2rem;
+  margin: 2rem 1rem;
+  font-family: Courier New, Courier, monospace;
+  white-space: nowrap;
+  background: $white-spirit;
+  border: 1px solid $grey-shade;
+  border-radius: 4px;
+  display: block;
+  overflow-x: auto;
+}
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid $grey-anatomy;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+button,
+.button {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem;
+}
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem;
+}
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.u-pull-right {
+  float: right;
+}
+
+.u-pull-left {
+  float: left;
+}
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid $grey-anatomy;
+}
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Self Clearing Goodness */
+
+.container:after,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Custom
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.control {
+	font-size: 1.6rem;
+	position: relative;
+	display: block;
+	margin-bottom: 1.2rem;
+	padding-left: 3rem;
+	cursor: pointer;
+}
+
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.control__indicator {
+	position: absolute;
+	top: 0.3rem;
+	left: 0;
+	width: 2.2rem;
+	height: 2.2rem;
+	background: $white-spirit;
+}
+
+.control--radio .control__indicator {
+	border-radius: 50%;
+}
+
+/* Hover and focus states */
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+	background: $white-spirit;
+}
+
+/* Checked state */
+.control input:checked ~ .control__indicator {
+	background: $white-spirit;
+}
+
+/* Hover state whilst checked */
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+	background: $white-spirit;
+}
+
+/* Disabled state */
+.control input:disabled ~ .control__indicator {
+	pointer-events: none;
+	opacity: .6;
+	background: $grey-anatomy;
+}
+
+/* Check mark */
+.control__indicator:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+/* Show check mark */
+.control input:checked ~ .control__indicator:after {
+	display: block;
+}
+
+/* Checkbox tick */
+.control--checkbox .control__indicator:after {
+	top: 0.2rem;
+	left: 0.7rem;
+	width: 0.45rem;
+	height: 1.2rem;
+	transform: rotate(45deg);
+	border: solid $orange-clockwork;
+	border-width: 0 0.2rem 0.2rem 0;
+}
+
+/* Disabled tick colour */
+.control--checkbox input:disabled ~ .control__indicator:after {
+	border-color: $grey-shade;
+}
+
+/* Radio button inner circle */
+.control--radio .control__indicator:after {
+	top: 0.5rem;
+	left: 0.5rem;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background: $orange-clockwork;
+}
+
+/* Disabled circle colour */
+.control--radio input:disabled ~ .control__indicator:after {
+	background: $grey-shade;
+}
+
+.select {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.select select {
+	display: inline-block;
+	width: 100%;
+	padding: 10px 15px;
+	cursor: pointer;
+	outline: 0;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.select select::-ms-expand {
+	display: none;
+}
+
+.select select:hover,
+.select select:focus {
+	color: $dark-knight;
+	background: $white-spirit;
+}
+
+.select select:disabled {
+	pointer-events: none;
+	opacity: .5;
+}
+
+.select__arrow {
+	position: absolute;
+	top: 1.8rem;
+	right: 1.5rem;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+	border-width: 0.8rem 0.5rem 0 0.5rem;
+	border-style: solid;
+	border-color: $dark-knight transparent transparent transparent;
+}
+.select select:hover ~ .select__arrow,
+.select select:focus ~ .select__arrow {
+	border-top-color: #000;
+}
+
+.select select:disabled ~ .select__arrow {
+	border-top-color: #ccc;
+}
+
+.field-lock:after,
+.field-info:after {
+  position:relative;
+  font-family: 'icomoon';
+  content: "\e98f";
+  display: block;
+  float: right;
+  margin-top:-4rem;
+  margin-right: 0.3rem;
+  font-size: 2.3rem;
+  line-height: 0.4rem;
+  color: $grey-anatomy;
+}
+
+.field-info:after {
+  content: "\ea0c";
+}
+
+.loading {
+  font-size: 3.5rem;
+  line-height: 1.3;
+  text-align: center;
+  color: $grey-shade;
+  &:before {
+    display: block;
+    margin: 4rem auto 2rem auto;
+    width: 6rem;
+    font-size: 6rem;
+    animation: anim-rotate 1s infinite steps(12);
+    content: "\ea2d";
+  }
+}
+
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {}
+
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 550px) {}
+
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {}
+
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {
+  .left-side {
+    display: block;
+  }
+}
+
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {}
+
+
+/* Do not remove the comments below. It's the markers used by gulp-inject to inject
+   all your sass files automatically */
+
+// injector
+// endinjector

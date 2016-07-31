@@ -1,0 +1,24 @@
+<div class="container">
+    <breadcrumb navigation="$ctrl.steps"></breadcrumb>
+    <div ng-if="!$ctrl.isPageLoading" class="row">
+        <credit-card card-data="$ctrl.cardData" on-card-change="$ctrl.onCardChange($event)" highlight-error="$ctrl.shouldDisplayErrors">
+        </credit-card>
+    </div>
+    <div class="row">
+        <label for="cgv" class="label-cgv control control--checkbox">
+          <input type="checkbox" id="cgv" value="1" ng-model="$ctrl.isCGVChecked" />
+          <div class="control__indicator" ng-class="{'input-error' : !$ctrl.isCGVChecked && $ctrl.shouldDisplayErrors }"></div>
+          I agree <a href="#">conditions générales d'abonnement</a>
+        </label>
+    </div>
+    <div class="row" ng-if="$ctrl.shouldDisplayErrors">
+        <p class="error-message" ng-repeat="errorMessage in $ctrl.errorMessages track by $index">{{errorMessage}}</p>
+    </div>
+    <div class="row">
+        <button class="button button-primary" ng-click="$ctrl.onValid()">Confirm</button>
+    </div>
+    <p class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lectus in elit iaculis interdum non vitae tortor. Pellentesque eget odio vehicula nulla blandit tempus. Vestibulum ullamcorper libero et magna malesuada facilisis. Etiam tempus
+        quis dui sed faucibus. Etiam libero tortor, vestibulum at malesuada sit amet, finibus in est. </p>
+
+
+</div>

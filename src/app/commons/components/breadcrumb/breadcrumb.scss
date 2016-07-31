@@ -1,0 +1,45 @@
+breadcrumb {
+  display: block;
+  ul {
+    margin: 0;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    margin-left: 0.8rem;
+    color: $gray-jean;
+    font-weight: normal;
+    font-size: 1.3rem;
+    &:first-child {
+      margin-left: 0;
+    }
+    &.active {
+      color: $dark-knight;
+    }
+    &.done {
+      font-weight: bold;
+    }
+    &:after {
+      content: "---------";
+      color: $gray-jean;
+      font-weight: normal;
+      letter-spacing: -2px;
+      font-size: 1.6rem;
+      margin-left: 0.8rem;
+      opacity: 0.3;
+    }
+    &:last-child:after {
+      content: "";
+    }
+  }
+}
+
+
+/* Larger than mobile */
+
+@media (min-width: 550px) {
+  breadcrumb {
+    display: block
+  }
+}

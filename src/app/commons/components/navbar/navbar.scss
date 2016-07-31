@@ -1,0 +1,52 @@
+navbar {
+  position: relative;
+  min-height: 4rem;
+  margin-bottom: 0;
+  background-color: $orange-clockwork;
+  display: none;
+  &>a {
+    float: left;
+    color: $white-forit;
+    padding: 1rem;
+    line-height: 20px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+      background-color: $orange-clockwork-hover;
+      color: $white-spirit;
+    }
+  }
+  ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    li {
+      float: left;
+      position: relative;
+      display: block;
+      a {
+        color: $white-forit;
+        position: relative;
+        display: block;
+        padding: 1rem;
+        line-height: 20px;
+        font-size: 1.3rem;
+        text-decoration: none;
+        &:hover {
+          background-color: $orange-clockwork-hover;
+          color: $white-spirit;
+        }
+      }
+    }
+  }
+}
+
+
+/* Larger than mobile */
+
+@media (min-width: 550px) {
+  navbar {
+    display: block
+  }
+}

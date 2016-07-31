@@ -1,0 +1,41 @@
+credit-card {
+  display:block;
+  .cvc-box { max-height: 6rem;}
+  .credit-card-p {
+    margin-bottom: 1.6rem;
+    text-align:left;
+
+    .credit-card-img {
+      vertical-align: middle;
+      width: 16rem;
+    }
+  }
+  .field-info:after {
+    margin-right: -2.8rem;
+  }
+  .cvc-hitbox {
+    position:relative;
+    float : right;
+    z-index : 200;
+    top: -5.3rem;
+    right:0.5rem;
+    width: 3.5rem;
+    height: 3rem;
+  }
+  .cvc-tooltip {
+    position:relative;
+    float : right;
+    z-index : 200;
+    background: $white-forit;
+    border:1px solid $grey-anatomy;
+    color: $grey-shade;
+    top: -17rem;
+    right: -3rem;
+    padding: 0.3rem;
+    width: 20rem;
+    height: 11.5rem;
+    p {margin-bottom: 0.7rem;line-height: 1.6rem;}
+    img {width:70%}
+    text-align: center;
+  }
+}

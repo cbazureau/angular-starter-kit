@@ -1,0 +1,51 @@
+<p class="credit-card-p">
+  Secure credit card payment <img class="credit-card-img" src="/assets/img/payment-means.png" /></p>
+<div class="row">
+  <div class="field-lock">
+    <input placeholder="Credit Card number"
+      class="u-full-width credit-card-number"
+      type="tel"
+      name="credit-card-number"
+      maxlength="19"
+      ng-model= "$ctrl.cardDataModel.number"
+      ng-keypress= "$ctrl.onKeyPressInt($event)"
+      ng-keyup= "$ctrl.onKeyUpNumber($event)"
+      placeholder="Numéro de carte"
+      ng-paste="$event.preventDefault()"
+      ng-class="{'input-error' : !$ctrl.validation.number && $ctrl.highlightError  }" />
+  </div>
+</div>
+<div class="row">
+  <div class="one-half column">
+    <input class="u-full-width credit-card-expire"
+        type="tel"
+        ng-model= "$ctrl.cardDataModel.expires"
+        ng-keypress= "$ctrl.onKeyPressInt($event)"
+        ng-keyup= "$ctrl.onKeyUpExpires($event)"
+        id="credit-card-expire"
+        placeholder="MM / YY"
+        ng-paste="$event.preventDefault()"
+        maxlength="7"
+        ng-class="{'input-error' : $ctrl.highlightError && !$ctrl.validation.expires}"
+        name="credit-card-expire"
+        ng-trim="false">
+  </div>
+  <div class="one-half column cvc-box">
+    <div class="field-info">
+      <input class="u-full-width credit-card-cvc"
+      ng-keypress= "$ctrl.onKeyPressInt($event)"
+      ng-keyup= "$ctrl.onKeyUpCvc($event)"
+      ng-model= "$ctrl.cardDataModel.cvc"
+      type="tel"
+      name="credit-card-cvc"
+      placeholder="Cryptogram"
+      ng-paste="$event.preventDefault()"
+      maxlength="4"
+      ng-class="{'input-error' : $ctrl.highlightError && !$ctrl.validation.cvc}">
+      <div class="cvc-hitbox" ng-click="$ctrl.displayCvcTooltip = !$ctrl.displayCvcTooltip"></div>
+    </div>
+    <div class="cvc-tooltip" ng-if="$ctrl.displayCvcTooltip">
+      <p>3 or 4 digits on the back of your credit card</p>
+    </div>
+  </div>
+</div>

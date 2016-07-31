@@ -1,0 +1,227 @@
+<header-light></header-light>
+<navbar></navbar>
+<div class="container">
+  <div class="demo">
+    <h1>System Font 35px</h1>
+    <code>&lt;h1&gt;System Font 35px&lt;/h1&gt;</code>
+    <h2>System Font 24px</h2>
+    <code>&lt;h2&gt;System Font 24px&lt;/h2&gt;</code>
+    <h3>System Font 20px</h3>
+    <code>&lt;h3&gt;System Font 20px&lt;/h3&gt;</code>
+    <h4>System Font 18px</h4>
+    <code>&lt;h4&gt;System Font 18px&lt;/h4&gt;</code>
+    <p>System Font 16px - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lectus in elit iaculis interdum non vitae tortor. Pellentesque eget odio vehicula nulla blandit tempus. Vestibulum ullamcorper libero et magna malesuada facilisis. Etiam tempus quis dui sed faucibus. Etiam libero tortor, vestibulum at malesuada sit amet, finibus in est. Nulla ullamcorper tellus elit, ac sagittis lorem rhoncus sed. Mauris condimentum varius massa vitae bibendum.</p>
+    <code>&lt;p&gt;System Font 16px - Lorem ...&lt;/p&gt;</code>
+    <p class="small">System Font 13px - <strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lectus in elit lorem rhoncus sed. Mauris condimentum varius massa vitae bibendum.</p>
+    <code>&lt;p class="small"&gt;System Font 13px - &lt;strong&gt;Lorem&lt;/strong&gt; ipsum dolor sit ...&lt;/p&gt;</code>
+    <p class="center">System Font 16px - <strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lectus in elit lorem rhoncus sed. Mauris condimentum varius massa vitae bibendum.</p>
+    <code>&lt;p class="center"&gt;System Font 16px - &lt;strong&gt;Lorem&lt;/strong&gt; ipsum dolor sit ...&lt;/p&gt;</code>
+    <h1>Colors SASS</h1>
+    <div class="row">
+      <div class="color color-dark-knight"><h3 class="strong">$dark-knight</h3></div>
+      <div class="color color-dark-knight-hover"><h3 class="strong">$dark-knight</h3></div>
+      <div class="color color-white-forit"><h3 class="strong">$white-forit</h3></div>
+      <div class="color color-grey-anatomy"><h3 class="strong">$grey-anatomy</h3></div>
+      <div class="color color-gray-jean"><h3 class="strong">$gray-jean</h3></div>
+      <div class="color color-red-hot"><h3 class="strong">$red-hot</h3></div>
+      <div class="color color-grey-shade"><h3 class="strong">$grey-shade</h3></div>
+      <div class="color color-green-lantern"><h3 class="strong">$green-arrow</h3></div>
+      <div class="color color-orange-clockwork"><h3 class="strong">$orange-clockwork</h3></div>
+      <div class="color color-orange-clockwork-hover"><h3 class="strong">$orange-clockwork-hover</h3></div>
+    </div>
+    <h1>Input, Select, Button, Textarea</h1>
+    <div class="row">
+      <div class="one-half column"><input type="text" value="" placeholder="Placeholder" class="u-full-width"/></div>
+      <div class="one-half column"><input type="text" value="" placeholder="Required field" required="required" class="u-full-width" /></div>
+    </div>
+    <div class="row">
+      <div class="one-half column"><input type="text" value="Some data" class="u-full-width" /></div>
+      <div class="one-half column"><input type="text" class="input-valid u-full-width" value="Some data ok" /></div>
+    </div>
+    <div class="row">
+      <div class="one-half column"><input type="text" class="input-error u-full-width" value="Some data ko" /></div>
+    </div>
+    <div class="row">
+      <code>
+        &lt;input type="text" value="" placeholder="Placeholder" class="u-full-width"/&gt;
+        <br />
+        &lt;input type="text" value="" placeholder="Required field" required="required" class="u-full-width"/&gt;
+        <br />
+        &lt;input type="text" value="Some data" class="u-full-width"/&gt;
+        <br />
+        &lt;input type="text" value="Some data ok" class="input-valid u-full-width"/&gt;
+        <br />
+        &lt;input type="text" value="Some data ko" class="input-error u-full-width"/&gt;
+
+      </code>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <label for="my-check" class="control control--checkbox">
+          <input type="checkbox" id="my-check" value="1" />
+          <div class="control__indicator"></div>
+          This is a checkbox
+        </label>
+      </div>
+      <div class="three columns">
+        <label for="my-radio1" class="control control--radio">
+          <input type="radio" name="my-radio" id="my-radio1" value="1" />
+          <div class="control__indicator"></div> This is a radio 1
+        </label>
+      </div>
+      <div class="three columns">
+         <label for="my-radio2" class="control control--radio">
+           <input type="radio" name="my-radio" id="my-radio2" value="2" />
+           <div class="control__indicator"></div>  This is a radio 2
+        </label>
+      </div>
+    </div>
+    <div class="row">
+      <code>
+       &lt;div class="row"&gt;
+       <br />&nbsp;&nbsp; &lt;div class=&quot;one-half column&quot;&gt;
+       <br />&nbsp;&nbsp;&nbsp;&nbsp;  &lt;label for=&quot;my-check&quot; class="control control--checkbox"&gt;
+       <br />&nbsp;&nbsp;&nbsp;&nbsp;  &lt;input type=&quot;checkbox&quot; id=&quot;my-check&quot; value=&quot;1&quot; /&gt;
+       <br />&nbsp;&nbsp;&nbsp;&nbsp;  &lt;div class="control__indicator"&gt;&lt;/div&gt;
+       <br />&nbsp;&nbsp;&nbsp;&nbsp;  This is a checkbox&lt;/label&gt;
+       <br />&nbsp;&nbsp; &lt;/div&gt;
+       <br />&nbsp;&nbsp; &lt;div class=&quot;one-half column&quot;&gt;
+       <br />&nbsp;&nbsp;&nbsp;&nbsp; &lt;label for=&quot;my-radio1&quot; class="control control--radio"&gt;
+       <br />&nbsp;&nbsp;&nbsp;&nbsp;  &lt;input type=&quot;radio&quot; name=&quot;my-radio&quot; id=&quot;my-radio1&quot; value=&quot;1&quot; /&gt;
+       <br />&nbsp;&nbsp;&nbsp;&nbsp;  &lt;div class="control__indicator"&gt;&lt;/div&gt;
+       <br />&nbsp;&nbsp;&nbsp;&nbsp; This is a radio 1&lt;/label&gt;
+       <br />&nbsp;&nbsp;&nbsp;&nbsp; &lt;label for=&quot;my-radio2&quot; class="control control--radio"&gt;
+       <br />&nbsp;&nbsp;&nbsp;&nbsp;  &lt;input type=&quot;radio&quot; name=&quot;my-radio&quot; id=&quot;my-radio2&quot; value=&quot;2&quot; /&gt;
+       <br />&nbsp;&nbsp;&nbsp;&nbsp;  &lt;div class="control__indicator"&gt;&lt;/div&gt;
+       <br />&nbsp;&nbsp;&nbsp;&nbsp; This is a radio 2&lt;/label&gt;
+       <br />&nbsp;&nbsp; &lt;/div&gt;
+       <br />&lt;/div&gt;
+      </code>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <div class="select">
+          <select class="u-full-width">
+                  <option value="1">Value 1</option>
+                  <option value="2">Value 2</option>
+                  <option value="3">Value 3</option>
+                </select>
+          <div class="select__arrow"></div>
+        </div>
+      </div>
+      <div class="one-half column">
+        <div class="select">
+          <select class="u-full-width" required="required">
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+              </select>
+          <div class="select__arrow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="one-half column">
+        <div class="select">
+          <select class="u-full-width input-valid">
+                      <option value="1">Value 1</option>
+                      <option value="2">Value 2</option>
+                      <option value="3">Value 3</option>
+                  </select>
+          <div class="select__arrow"></div>
+        </div>
+      </div>
+      <div class="one-half column">
+        <div class="select">
+          <select class="u-full-width input-error">
+          <option value="">Value 1</option>
+          <option value="">Value 2</option>
+          <option value="">Value 3</option>
+        </select>
+          <div class="select__arrow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <code>
+        &lt;div class=&quot;row&quot;&gt;
+        <br />&nbsp;&nbsp; &lt;div class=&quot;one-half column&quot;&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;select&quot;&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;select class=&quot;u-full-width&quot;&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=&quot;1&quot;&gt;Value 1&lt;/option&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=&quot;2&quot;&gt;Value 2&lt;/option&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=&quot;3&quot;&gt;Value 3&lt;/option&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/select&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;select__arrow&quot;&gt;&lt;/div&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+        <br />&nbsp;&nbsp; &lt;/div&gt;
+        <br />&nbsp;&nbsp; &lt;div class=&quot;one-half column&quot;&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;select&quot;&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;select class=&quot;u-full-width&quot; required=&quot;required&quot;&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=&quot;1&quot;&gt;Value 1&lt;/option&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=&quot;2&quot;&gt;Value 2&lt;/option&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=&quot;3&quot;&gt;Value 3&lt;/option&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/select&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;select__arrow&quot;&gt;&lt;/div&gt;
+        <br />&nbsp;&nbsp; &lt;/div&gt;
+        <br /> &lt;/div&gt;
+        <br /> &lt;/div&gt;
+        <br />&nbsp;&nbsp; &lt;div class=&quot;row&quot;&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;one-half column&quot;&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;select&quot;&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;select class=&quot;u-full-width input-valid&quot;&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=&quot;1&quot;&gt;Value 1&lt;/option&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=&quot;2&quot;&gt;Value 2&lt;/option&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=&quot;3&quot;&gt;Value 3&lt;/option&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/select&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;select__arrow&quot;&gt;&lt;/div&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+        <br />&nbsp;&nbsp; &lt;/div&gt;
+        <br />&nbsp;&nbsp; &lt;div class=&quot;one-half column&quot;&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;select&quot;&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;select class=&quot;u-full-width input-error&quot;&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=&quot;&quot;&gt;Value 1&lt;/option&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=&quot;&quot;&gt;Value 2&lt;/option&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value=&quot;&quot;&gt;Value 3&lt;/option&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/select&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;select__arrow&quot;&gt;&lt;/div&gt;
+        <br />&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+        <br />&nbsp;&nbsp; &lt;/div&gt;
+        <br /> &lt;/div&gt;
+      </code>
+    </div>
+    <div class="row">
+      <textarea class="u-full-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lectus in elit iaculis interdum non vitae tortor.Pellentesque eget odio vehicula nulla blandit tempus.</textarea>
+    </div>
+    <div class="row">
+      <a href="#" class="button button-back">Back</a>
+      <a href="#" class="button">Secondary</a>
+      <a href="#" class="button button-primary">Primary</a>
+      <button class="button button-primary" disabled="disabled">Disabled</button>
+    </div>
+    <div class="row">
+      <code>
+        &lt;a href=&quot;#&quot; class=&quot;button button-back&quot;&gt;Back&lt;/a&gt;
+        <br />&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Secondary&lt;/a&gt;
+        <br />&lt;a href=&quot;#&quot; class=&quot;button button-primary&quot;&gt;Primary&lt;/a&gt;
+        <br />&lt;button class=&quot;button button-primary&quot; disabled=&quot;disabled&quot;&gt;Disabled&lt;/button&gt;
+      </code>
+    </div>
+    <div class="row">
+      <h1>Credit Card Component</h1>
+      <credit-card card-data="$ctrl.cardData" on-card-change="$ctrl.callbackCard($event)"></credit-card>
+      <ul>
+        <li>number : {{$ctrl.cardData.number}}</li>
+        <li>month : {{$ctrl.cardData.expireMonth}} / year : {{$ctrl.cardData.expireYear}}</li>
+        <li>cvc : {{$ctrl.cardData.cvc}}</li>
+      </ul>
+    </div>
+    <div class="row">
+      <h1>Lodash-custom</h1>
+      <p>Librairie lodash remaniée actuellement les fonctions importées de lodash</p>
+      <ul>
+        <li><a href="https://lodash.com/docs#get">_.get</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
