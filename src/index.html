@@ -24,18 +24,20 @@
             div.app-loading div.animated-container {background-color:#333333;bottom:0;left:0;opacity:1.0;position:fixed;right:0;top:0;z-index:999999;}
             div.app-loading div.animated-container.ng-leave {opacity:1.0;transition: all linear 200ms;-webkit-transition: all linear 200ms;}
             div.app-loading div.animated-container.ng-leave-active {opacity:0;}
-            div.app-loading div.messaging {color:#FFFFFF;font-family:monospace;left:0;position:absolute;right:0;text-align:center;top:40%;font-size:1.6rem;max-width:70%;margin:0 auto;line-height:3rem;}
-            div.app-loading img {margin:20% auto 2rem auto;width:10rem;height:10rem;display:block;}
+            div.app-loading div.center-message {color:#FFFFFF;font-family:monospace;left:0;position:absolute;right:0;text-align:center;top:25%;font-size:1.6rem;max-width:70%;margin:0 auto;line-height:3rem;}
+            div.app-loading img {margin:0 auto 2rem auto;width:20rem;height:20rem;display:block;}
             @media (min-width: 750px) {
-              div.app-loading div.messaging {font-size:2rem;}
-              div.app-loading img {margin:5% auto 3rem auto;width:20rem;height:20rem;}
+              div.app-loading div.center-message {font-size:2rem;}
+              div.app-loading img {margin:0 auto 3rem auto;width:25rem;height:25rem;}
             }
         </style>
         <div class="app-loading">
           <div class="animated-container">
-            <img src="assets/img/logo.svg" />
-            <div class="messaging">
-              Les meilleures choses ont besoin de patience
+            <div class="center-message">
+              <img src="assets/img/logo.svg" />
+              <div class="messaging">
+                Les meilleures choses ont besoin de patience
+              </div>
             </div>
           </div>
         </div>
