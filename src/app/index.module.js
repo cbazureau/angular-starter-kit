@@ -8,12 +8,15 @@ import { runBlock } from './index.run';
 // Modules
 import './commons/commons.module';
 import './subscription/subscription.module';
+import './twitter/twitter.module';
 
 // Routes
 
 angular.module('starter',
   [
+    'ngtweet',
     'ui.router',
+    'starter.twitter',
     'starter.subscription',
     'starter.commons'
   ])
