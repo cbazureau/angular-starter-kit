@@ -1,5 +1,6 @@
 <div class="container">
     <breadcrumb navigation="$ctrl.steps"></breadcrumb>
+    <p>You have chosen the <strong>offer {{$ctrl.offer}}</strong>.</p>
     <div ng-if="!$ctrl.isPageLoading" class="row">
         <credit-card card-data="$ctrl.cardData" on-card-change="$ctrl.onCardChange($event)" highlight-error="$ctrl.shouldDisplayErrors">
         </credit-card>

@@ -1,9 +1,26 @@
 <banner message="$ctrl.banner"></banner>
 <div class="container">
-  <breadcrumb navigation="$ctrl.steps"></breadcrumb>
-  <h1>Choose your offer</h1>
+    <breadcrumb navigation="$ctrl.steps"></breadcrumb>
+    <h1>Choose your offer</h1>
 
-  <div class="row">
-    <button ng-click="$ctrl.onValid()" class="button button-primary">Valider</button>
-  </div>
+    <div class="offers">
+        <div class="offer">
+            <h3>Offer 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lectus in elit iaculis interdum non vitae tortor.</p>
+            <h4>9.99&euro; per month</h4>
+            <button ng-click="$ctrl.onValid(1)" class="button button-primary">Choose</button>
+        </div>
+        <div class="offer">
+            <h3>Offer 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lectus in elit iaculis interdum non vitae tortor.</p>
+            <h4>11.99&euro; per month</h4>
+            <button ng-click="$ctrl.onValid(2)" class="button button-primary">Choose</button>
+        </div>
+        <div class="offer">
+            <h3>Offer 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lectus in elit iaculis interdum non vitae tortor.</p>
+            <h4>15.99&euro; per month</h4>
+            <button ng-click="$ctrl.onValid(3)" class="button button-primary">Choose</button>
+        </div>
+    </div>
 </div>

@@ -8,7 +8,8 @@ export class SubscriptionStepOfferController {
     this.steps = SubscriptionStorage.steps
   }
 
-  onValid () {
+  onValid (ofrId) {
+    this._SubscriptionStorage.offer = ofrId
     this._$state.go('^.payment')
   }
 }

@@ -1,0 +1,33 @@
+.offers {
+    .offer {
+        width: 95%;
+        margin: 1rem auto;
+        float: left;
+        border: 1px solid $grey-shade;
+        border-radius: 1rem;
+        padding: 1rem;
+        h3 {
+            text-align: center;
+        }
+        h4 {
+            text-align: center;
+        }
+        p {
+            font-size: 1.3rem;
+            text-align: center;
+        }
+    }
+}
+
+
+/* Larger than mobile */
+
+@media (min-width: 750px) {
+    .offers {
+        .offer {
+            width: 28%;
+            margin: 1rem 2%;
+
+        }
+    }
+}
