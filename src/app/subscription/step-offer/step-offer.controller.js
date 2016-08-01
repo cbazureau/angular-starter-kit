@@ -6,10 +6,23 @@ export class SubscriptionStepOfferController {
     this._$state = $state
     SubscriptionStorage.init()
     this.steps = SubscriptionStorage.steps
+    this.offers = [{
+      id: 1,
+      price: 9.99,
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lectus in elit iaculis interdum non vitae tortor'
+    }, {
+      id: 2,
+      price: 11.99,
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lectus in elit iaculis interdum non vitae tortor'
+    }, {
+      id: 3,
+      price: 14.99,
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lectus in elit iaculis interdum non vitae tortor'
+    }]
   }
 
-  onValid (ofrId) {
-    this._SubscriptionStorage.offer = ofrId
+  onChoose (event) {
+    this._SubscriptionStorage.offer = event.ofrId
     this._$state.go('^.payment')
   }
 }

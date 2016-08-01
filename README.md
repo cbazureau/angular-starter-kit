@@ -7,6 +7,10 @@ An angular 1.5.x starter kit inspired by others kits with examples
 - Stack Gulp, Base architecture : http://fountainjs.io/
 - CSS Framework : http://getskeleton.com/
 - Icon Font : https://icomoon.io/app/#/select
+- Unit Tests : 
+  - https://docs.angularjs.org/api/ng/function/angular.element
+  - http://stackoverflow.com/questions/17283697/angularjs-how-to-find-using-jqlite
+  - http://stackoverflow.com/questions/22921242/remove-carriage-return-and-space-from-a-string
 
 ### Installation
 ```
