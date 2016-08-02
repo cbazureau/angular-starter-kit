@@ -2,10 +2,5 @@
 <div class="container">
     <breadcrumb navigation="$ctrl.steps"></breadcrumb>
     <h1>Choose your offer</h1>
-
-    <div class="offers">
-        <div class="offer" ng-repeat="offer in $ctrl.offers">
-            <offer offer="offer" choose="$ctrl.onChoose($event)" />
-        </div>
-    </div>
+    <offers offers="$ctrl.offers" choose="$ctrl.onChoose($event)" />
 </div>

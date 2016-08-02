@@ -11,7 +11,7 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
 import { CreditCardComponent } from './components/credit-card/credit-card.component'
 import { HeaderLightComponent } from './components/header-light/header-light.component'
 import { NavbarComponent } from './components/navbar/navbar.component'
-import { OfferComponent } from './components/offer/offer.component'
+import { OffersComponent } from './components/offers/offers.component'
 
 // Commons Services
 import { ErrorService } from './services/error/error.service'
@@ -37,7 +37,7 @@ let CommonsModule = angular.module('starter.commons', [])
   .component('navbar', NavbarComponent)
   .component('breadcrumb', BreadcrumbComponent)
   .component('creditCard', CreditCardComponent)
-  .component('offer', OfferComponent)
+  .component('offers', OffersComponent)
   .value('EventEmitter', payload => ({ $event: payload }))
 
   // Routes
