@@ -4,11 +4,16 @@ export class SubscriptionStepOfferController {
     this._SubscriptionStorage = SubscriptionStorage
     this._$log = $log
     this._$state = $state
-    SubscriptionStorage.init()
+    this._$timeout = $timeout
     this.steps = SubscriptionStorage.steps
     this.offers = null
-    // Note 1 : Simulate async call
-    $timeout(() => {
+
+  }
+
+  $onInit(){
+    this._SubscriptionStorage.init()
+     // Note 1 : Simulate async call
+    this._$timeout(() => {
       this.offers = [{
         id: 1,
         price: 9.99,
@@ -24,7 +29,6 @@ export class SubscriptionStepOfferController {
       }]
     }, 2000)
   }
-
   onChoose (event) {
     this._SubscriptionStorage.offer = event.ofrId
     this._$state.go('^.payment')

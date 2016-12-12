@@ -1,3 +1,5 @@
 import './find'
 import './groupBy'
 import './keys'
+import './uniqBy'
+import './uniq'
