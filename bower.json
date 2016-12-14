@@ -5,7 +5,7 @@
     "angular-ui-router": "~0.3.1",
     "moment": "~2.10.6",
     "normalize-css": "~4.0.0",
-    "angular": "~1.5.8",
+    "angular": "~1.6.0",
     "ngtweet": "^0.6.1"
   },
   "devDependencies": {

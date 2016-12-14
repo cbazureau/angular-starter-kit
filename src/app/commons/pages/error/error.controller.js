@@ -1,10 +1,15 @@
 export class ErrorController {
-  constructor (ErrorService) {
+  constructor(ErrorService) {
     'ngInject';
-    this.error = {
-      message: ErrorService.getMessage(this.context, this.errorCode),
-      errorCode: this.errorCode
-    }
+    this._ErrorService = ErrorService
 
   }
+
+  $onInit() {
+    this.error = {
+      message: this._ErrorService.getMessage(this.context, this.errorCode),
+      errorCode: this.errorCode
+    }
+  }
+
 }
