@@ -2,9 +2,7 @@ export class CreditCardController {
   constructor(EventEmitter, ERROR) {
     'ngInject'
     this._EventEmitter = EventEmitter
-    this.year = new Date().getFullYear() - 2000
     this._ERROR = ERROR
-    this.displayCvcTooltip = false
   }
 
   $onChanges(changes) {
@@ -14,6 +12,8 @@ export class CreditCardController {
   }
 
   $onInit() {
+    this.year = new Date().getFullYear() - 2000
+    this.displayCvcTooltip = false
     if (!this.cardData) {
       this.cardData = {}
     }

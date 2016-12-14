@@ -12,6 +12,7 @@ import { CreditCardComponent } from './components/credit-card/credit-card.compon
 import { HeaderLightComponent } from './components/header-light/header-light.component'
 import { NavbarComponent } from './components/navbar/navbar.component'
 import { OffersComponent } from './components/offers/offers.component'
+import { LoadingComponent } from './components/loading/loading.component'
 
 // Commons Services
 import { ErrorService } from './services/error/error.service'
@@ -38,6 +39,7 @@ let CommonsModule = angular.module('starter.commons', [])
   .component('breadcrumb', BreadcrumbComponent)
   .component('creditCard', CreditCardComponent)
   .component('offers', OffersComponent)
+  .component('loading', LoadingComponent)
   .value('EventEmitter', payload => ({ $event: payload }))
 
   // Routes

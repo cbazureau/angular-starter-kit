@@ -4,6 +4,7 @@ An angular 1.6.x starter kit inspired by others kits with examples
 # Inspiration sources
 
 - Todd Motto Angular Style Guide : https://github.com/toddmotto/angular-styleguide
+- Angular 1.6 migration : https://toddmotto.com/angular-1-6-is-here
 - Slack UltimateAngular (https://ultimateangular.slack.com)
 - Stack Gulp, Base architecture : http://fountainjs.io/
 - CSS Framework : http://getskeleton.com/

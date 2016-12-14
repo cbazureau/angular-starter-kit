@@ -1,14 +1,16 @@
 export class SubscriptionStepPaymentController {
   constructor (SubscriptionStorage, $log, $state, ERROR) {
     'ngInject'
-
+    this._SubscriptionStorage = SubscriptionStorage
     this._$log = $log
     this._$state = $state
-    // this._ContractService = ContractService
     this._ERROR = ERROR
-    this.offer = SubscriptionStorage.offer
-    this.steps = SubscriptionStorage.steps
-    SubscriptionStorage.setStep('payment')
+  }
+
+  $onInit() {
+    this.offer = this._SubscriptionStorage.offer
+    this.steps = this._SubscriptionStorage.steps
+    this._SubscriptionStorage.setStep('payment')
     this.cardData = {}
     this.shouldDisplayErrors = false
     this.isValid = false
@@ -31,10 +33,6 @@ export class SubscriptionStepPaymentController {
   }
 
   onValid () {
-    /*this._ContractService.subscribe(this.cardData)
-      .then(() => this._$state.go('^.confirm'))
-      .catch(() => this._$state.go('error', { context: 'ERROR_SUBSCRIPTION', errorCode: 'ERR_PAYMENT' }))
-  */
     if (!this.isValid || !this.isCGVChecked) {
       this.shouldDisplayErrors = true
     } else {

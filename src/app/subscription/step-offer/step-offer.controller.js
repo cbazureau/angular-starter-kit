@@ -5,12 +5,11 @@ export class SubscriptionStepOfferController {
     this._$log = $log
     this._$state = $state
     this._$timeout = $timeout
-    this.steps = SubscriptionStorage.steps
-    this.offers = null
-
   }
 
   $onInit(){
+    this.steps = this._SubscriptionStorage.steps
+    this.offers = null
     this._SubscriptionStorage.init()
      // Note 1 : Simulate async call
     this._$timeout(() => {

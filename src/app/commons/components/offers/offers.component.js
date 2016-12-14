@@ -6,7 +6,7 @@ export let OffersComponent = {
     choose: '&'
   },
   controller: OffersController,
-  template: `<div class="offers-loading" ng-if="!$ctrl.offers"><h3>Loading offers ...</h3></div>
+  template: `<div class="offers-loading" ng-if="!$ctrl.offers"><loading message="Loading offers ..."></loading></div>
             <div class="offers" ng-if="$ctrl.offers">
               <div class="offer" ng-repeat="offer in $ctrl.offers">
                   <h3 class="offer-title">Offer {{offer.id}}</h3>
