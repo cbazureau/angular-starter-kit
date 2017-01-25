@@ -15,7 +15,7 @@ let pathSrcJs = [
 ]
 
 function runTests (singleRun, done) {
-  let reporters = ['progress']
+  let reporters = ['mocha']
   let preprocessors = {}
 
   pathSrcHtml.forEach(path => {
