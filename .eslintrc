@@ -54,7 +54,7 @@
       "before": true,
       "after": false
     }],
-    "no-confusing-arrow": "error",
+    "no-confusing-arrow": ["error", {"allowParens": true}],
     "no-var": "error",
     "prefer-arrow-callback": "error"
 
